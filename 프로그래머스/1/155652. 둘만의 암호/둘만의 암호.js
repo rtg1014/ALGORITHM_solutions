@@ -14,11 +14,7 @@ function solution(s, skip, index) {
     })
     
     const double_filter_alphbat_list = filter_alphbat_list.concat(filter_alphbat_list).concat(filter_alphbat_list)
-    for(let i=0; i<3; i++){
-        filter_alphbat_list.concat(filter_alphbat_list)
-    }    
 
-    console.log(double_filter_alphbat_list)
     target_arr.forEach((word) =>{
         const target_word_index = (alphbat_list.indexOf(word)) + next_num
         answer += (double_filter_alphbat_list[target_word_index])
